@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q7njbxeSpf4w8vqmQ8ZhOM4WN3eUmlXbg++a5/EcQzR8Rp39YF5vdabvvc6eBw+p0cV5Tezb6TggwMA+qutaSA==",
+  "dgSpecHash": "TBNTdt4n/kQnYelj5++4qvt5InfyAjohY/qo2jRHA4LJW5ZMIX2fYQgYjaz1epqaKtDIKiEGSc9F6taNHTx8gw==",
   "success": true,
-  "projectFilePath": "d:\\thực tập\\C#\\D5\\D5\\D5.csproj",
+  "projectFilePath": "D:\\thực tập\\C#\\D5\\D5\\D5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512"
   ],

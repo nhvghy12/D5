@@ -81,8 +81,9 @@ public class RookiesController : Controller
             IsGraduated = false
         }
     };
+
     [Route("rookies/male")]
-    [Route("rookies/male-members")]
+    [Route("nashtech/rookies/male-members")]
     public IActionResult GetMaleMembers()
     {
         var results = from person in persons
@@ -90,21 +91,21 @@ public class RookiesController : Controller
                         select person;
             return Json(results);
     }
-    [Route("rookies/oldest")]
+    [Route("nashtech/rookies/oldest")]
     public IActionResult GetOldestMembers()
     {
         var maxAge = persons.Max(m => m.Age);
         var oldest = persons.First(m => m.Age == maxAge);
             return Json(oldest);
     }
-    [Route("rookies/full-name")]
+    [Route("nashtech/rookies/full-name")]
     public IActionResult GetFullname()
     {
         var fullNames = from person in persons
                         select person.FullName;
         return Json(fullNames);
     }
-    [Route("rookies/split-people-by-birth-year")]
+    [Route("nashtech/rookies/split-people-by-birth-year")]
     public IActionResult SplitPeopleByBirthYear(int year)
     {
         var results = from person in persons
@@ -122,7 +123,7 @@ public class RookiesController : Controller
                       };
         return Json(results);
     }
-    [Route("rookies/export")]
+    [Route("nashtech/rookies/export")]
     public IActionResult Export()
     {
         var buffer = WriteCsvToMemory(persons); 
