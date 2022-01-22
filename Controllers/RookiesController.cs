@@ -92,6 +92,7 @@ public class RookiesController : Controller
             return Json(results);
     }
     [Route("nashtech/rookies/oldest")]
+    [Route("rookies/oldest")]
     public IActionResult GetOldestMembers()
     {
         var maxAge = persons.Max(m => m.Age);
@@ -99,6 +100,7 @@ public class RookiesController : Controller
             return Json(oldest);
     }
     [Route("nashtech/rookies/full-name")]
+    [Route("rookies/full-name")]
     public IActionResult GetFullname()
     {
         var fullNames = from person in persons
@@ -106,6 +108,7 @@ public class RookiesController : Controller
         return Json(fullNames);
     }
     [Route("nashtech/rookies/split-people-by-birth-year")]
+    [Route("rookies/split-people-by-birth-year")]
     public IActionResult SplitPeopleByBirthYear(int year)
     {
         var results = from person in persons
@@ -124,6 +127,7 @@ public class RookiesController : Controller
         return Json(results);
     }
     [Route("nashtech/rookies/export")]
+    [Route("rookies/export")]
     public IActionResult Export()
     {
         var buffer = WriteCsvToMemory(persons); 
