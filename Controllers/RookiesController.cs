@@ -82,6 +82,10 @@ public class RookiesController : Controller
         }
     };
 
+    public IActionResult Index()
+    {
+        return View(persons);
+    }
     [Route("rookies/male")]
     [Route("nashtech/rookies/male-members")]
     public IActionResult GetMaleMembers()
