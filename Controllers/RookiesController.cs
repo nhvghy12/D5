@@ -79,6 +79,16 @@ public class RookiesController : Controller
             PhoneNumber = "",
             BirthPlace = "Ha Noi",
             IsGraduated = false
+        },
+        new Person
+        {
+            FirstName = "Thanh",
+            LastName = "Tran ",
+            Gender = "Male",
+            DateOfBirth = new DateTime(2000, 9, 18),
+            PhoneNumber = "",
+            BirthPlace = "Ha Noi",
+            IsGraduated = false
         }
     };
 
@@ -160,4 +170,39 @@ public class RookiesController : Controller
         persons.Add(model);
         return RedirectToAction("Index");
     }
+    public IActionResult Edit(int index)
+    {
+        if (index <=0 && index > persons.Count)
+        {
+            return RedirectToAction("Index");
+        }
+        var person = persons[index-1];
+        // var model = new PersonEditModel(person);
+        // model.Index = index;
+
+        ViewBag.PersonIndex = index;
+        return View(person);
+    }
+    [HttpPost]
+    public IActionResult Edit(int index,Person model)
+    {
+        if (!ModelState.IsValid)
+        { 
+            ViewBag.PersonIndex = index;
+            return View();
+        }
+        persons[index - 1] = model;
+        return RedirectToAction("Index");
+    }
+    //[HttpPost]
+    public IActionResult Delete(int index)
+    {
+        if (index <=0 && index > persons.Count)
+        {
+            return RedirectToAction("Index");
+        }
+        persons.RemoveAt(index - 1);
+        return RedirectToAction("Index");
+    }
+
 }
