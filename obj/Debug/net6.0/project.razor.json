@@ -16323,6 +16323,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\thực tập\\C#\\D5\\D5\\Views\\Rookies\\Create.cshtml",
+      "TargetPath": "Views\\Rookies\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\thực tập\\C#\\D5\\D5\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"

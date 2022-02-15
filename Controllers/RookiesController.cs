@@ -149,4 +149,15 @@ public class RookiesController : Controller
             return stream.ToArray();
         }
     }
+    public IActionResult Create()
+    {
+        return View();
+    }
+    [HttpPost]
+    public IActionResult Create(Person model)
+    {
+        if (!ModelState.IsValid) return View();
+        persons.Add(model);
+        return RedirectToAction("Index");
+    }
 }

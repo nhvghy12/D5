@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\thực tập\\C#\\D5\\D5\\D5.csproj": {}
+    "D:\\thực tập\\C#\\D5\\D5\\D5.csproj": {}
   },
   "projects": {
-    "d:\\thực tập\\C#\\D5\\D5\\D5.csproj": {
+    "D:\\thực tập\\C#\\D5\\D5\\D5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\thực tập\\C#\\D5\\D5\\D5.csproj",
+        "projectUniqueName": "D:\\thực tập\\C#\\D5\\D5\\D5.csproj",
         "projectName": "D5",
-        "projectPath": "d:\\thực tập\\C#\\D5\\D5\\D5.csproj",
+        "projectPath": "D:\\thực tập\\C#\\D5\\D5\\D5.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "d:\\thực tập\\C#\\D5\\D5\\obj\\",
+        "outputPath": "D:\\thực tập\\C#\\D5\\D5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
